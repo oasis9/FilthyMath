@@ -1,0 +1,16 @@
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\bin\Debug\FilthyMath.exe.config
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\bin\Debug\FilthyMath.exe
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\bin\Debug\FilthyMath.pdb
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.csprojResolveAssemblyReference.cache
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.Properties.Resources.resources
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.csproj.GenerateResource.Cache
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.csproj.CoreCompileInputs.cache
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.exe
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.pdb
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.FilthySplash.resources
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.FilthyMath.resources
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.FilthyHelp.resources
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.FilthyMemes.resources
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.FilthyGame.resources
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.src.forms.FilthyMessage.resources
+C:\Users\nsnraven\source\repos\FilthyMath\FilthyMath\obj\Debug\FilthyMath.src.forms.FilthyOperation.resources

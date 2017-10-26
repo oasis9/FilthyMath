@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A27D4CF0-DCD3-4296-B694-60AD9E8E36D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FilthyMath</RootNamespace>
+    <AssemblyName>FilthyMath</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=1.6.2.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.1.6.2\lib\dotnet\Costura.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\forms\FilthyMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\FilthyMessage.Designer.cs">
+      <DependentUpon>FilthyMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\FilthyOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\FilthyOperation.Designer.cs">
+      <DependentUpon>FilthyOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\main\Utils.cs" />
+    <Compile Include="src\operations\SubtractOperation.cs" />
+    <Compile Include="src\operations\MultiplyOperation.cs" />
+    <Compile Include="src\operations\DivideOperation.cs" />
+    <Compile Include="src\operations\AddOperation.cs" />
+    <Compile Include="src\forms\FilthyGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\FilthyGame.Designer.cs">
+      <DependentUpon>FilthyGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\FilthyHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\FilthyHelp.Designer.cs">
+      <DependentUpon>FilthyHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\FilthyMath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\FilthyMath.Designer.cs">
+      <DependentUpon>FilthyMath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\FilthyMemes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\FilthyMemes.Designer.cs">
+      <DependentUpon>FilthyMemes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\FilthySplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\FilthySplash.Designer.cs">
+      <DependentUpon>FilthySplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\operations\Operation.cs" />
+    <Compile Include="src\main\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="src\forms\FilthyGame.resx">
+      <DependentUpon>FilthyGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\FilthyHelp.resx">
+      <DependentUpon>FilthyHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\FilthyMath.resx">
+      <DependentUpon>FilthyMath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\FilthyMemes.resx">
+      <DependentUpon>FilthyMemes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\FilthyMessage.resx">
+      <DependentUpon>FilthyMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\FilthyOperation.resx">
+      <DependentUpon>FilthyOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\FilthySplash.resx">
+      <DependentUpon>FilthySplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="Resources\icon.ico" />
+    <Content Include="rep.txt" />
+    <None Include="Resources\xp3.png" />
+    <None Include="Resources\xp2.jpg" />
+    <None Include="Resources\xp2.png" />
+    <None Include="Resources\winxpflag.png" />
+    <None Include="Resources\winxp2.png" />
+    <None Include="Resources\winxp.jpg" />
+    <None Include="Resources\windows.png" />
+    <None Include="Resources\swastika.jpeg" />
+    <None Include="Resources\stuck.png" />
+    <None Include="Resources\sanic.png" />
+    <None Include="Resources\pointer.png" />
+    <None Include="Resources\pepe.png" />
+    <None Include="Resources\mpc.gif" />
+    <None Include="Resources\mycomputer2.jpg" />
+    <None Include="Resources\mycomputer.gif" />
+    <None Include="Resources\mtndewbottle.png" />
+    <None Include="Resources\mtndew.png" />
+    <None Include="Resources\mlg2.png" />
+    <None Include="Resources\mlg.png" />
+    <None Include="Resources\lenny.png" />
+    <None Include="Resources\illuminati.png" />
+    <None Include="Resources\filthy3.png" />
+    <None Include="Resources\filthy2.png" />
+    <None Include="Resources\filthy.gif" />
+    <None Include="Resources\doritosnachocheese.png" />
+    <None Include="Resources\doritos.png" />
+    <None Include="Resources\dorito2.png" />
+    <None Include="Resources\dorito.png" />
+    <None Include="Resources\airhorndank.png" />
+    <None Include="Resources\airhorn.png" />
+    <None Include="FodyWeavers.xml" />
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets" Condition="Exists('..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets')" />
+</Project>
