@@ -1,0 +1,2 @@
+# FilthyMath
+Memes + Math = FilthyMath
